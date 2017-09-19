@@ -164,7 +164,8 @@
             break;
         default:
         {
-            self.content = [self.content stringByAppendingString:key];
+            if (self.textFiled) [self.textFiled insertText:key];
+            if (self.textView) [self.textView insertText:key];
             if (self.clickSoundEnable) AudioServicesPlaySystemSound(self.soundID);
         }
             break;
