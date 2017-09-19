@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE01D3361F70F07D00220BCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D3351F70F07D00220BCA /* main.m */; };
+		BE01D3391F70F07D00220BCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D3381F70F07D00220BCA /* AppDelegate.m */; };
+		BE01D33C1F70F07D00220BCA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D33B1F70F07D00220BCA /* ViewController.m */; };
+		BE01D33F1F70F07D00220BCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE01D33D1F70F07D00220BCA /* Main.storyboard */; };
+		BE01D3411F70F07D00220BCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE01D3401F70F07D00220BCA /* Assets.xcassets */; };
+		BE01D3441F70F07D00220BCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE01D3421F70F07D00220BCA /* LaunchScreen.storyboard */; };
+		BE01D37E1F70F0BD00220BCA /* LTSafeKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D34D1F70F0BD00220BCA /* LTSafeKeyboard.m */; };
+		BE01D37F1F70F0BD00220BCA /* NSArray+LTAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D3511F70F0BD00220BCA /* NSArray+LTAdd.m */; };
+		BE01D3801F70F0BD00220BCA /* NSArray+Sudoku.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D3531F70F0BD00220BCA /* NSArray+Sudoku.m */; };
+		BE01D3811F70F0BD00220BCA /* NSMutableArray+LTAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D3551F70F0BD00220BCA /* NSMutableArray+LTAdd.m */; };
+		BE01D3821F70F0BD00220BCA /* LTBaseKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D3581F70F0BD00220BCA /* LTBaseKeyboard.m */; };
+		BE01D3831F70F0BD00220BCA /* LTHintBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D35A1F70F0BD00220BCA /* LTHintBubble.m */; };
+		BE01D3841F70F0BD00220BCA /* LTLetterKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D35C1F70F0BD00220BCA /* LTLetterKeyboard.m */; };
+		BE01D3851F70F0BD00220BCA /* LTNumberKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D35E1F70F0BD00220BCA /* LTNumberKeyboard.m */; };
+		BE01D3861F70F0BD00220BCA /* LTPasswordKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D3601F70F0BD00220BCA /* LTPasswordKeyboard.m */; };
+		BE01D3871F70F0BD00220BCA /* LTSymbolKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D3621F70F0BD00220BCA /* LTSymbolKeyboard.m */; };
+		BE01D3881F70F0BD00220BCA /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D3661F70F0BD00220BCA /* MASCompositeConstraint.m */; };
+		BE01D3891F70F0BD00220BCA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D3691F70F0BD00220BCA /* MASConstraint.m */; };
+		BE01D38A1F70F0BD00220BCA /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D36B1F70F0BD00220BCA /* MASConstraintMaker.m */; };
+		BE01D38B1F70F0BD00220BCA /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D36D1F70F0BD00220BCA /* MASLayoutConstraint.m */; };
+		BE01D38C1F70F0BD00220BCA /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D3711F70F0BD00220BCA /* MASViewAttribute.m */; };
+		BE01D38D1F70F0BD00220BCA /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D3731F70F0BD00220BCA /* MASViewConstraint.m */; };
+		BE01D38E1F70F0BD00220BCA /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D3751F70F0BD00220BCA /* NSArray+MASAdditions.m */; };
+		BE01D38F1F70F0BD00220BCA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D3781F70F0BD00220BCA /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		BE01D3901F70F0BD00220BCA /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D37A1F70F0BD00220BCA /* View+MASAdditions.m */; };
+		BE01D3911F70F0BD00220BCA /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D37D1F70F0BD00220BCA /* ViewController+MASAdditions.m */; };
+		BE01D3931F70F15C00220BCA /* LTAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE01D3921F70F15C00220BCA /* LTAssets.xcassets */; };
+		BE01D3961F70F16A00220BCA /* keyboard-click.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BE01D3941F70F16A00220BCA /* keyboard-click.aiff */; };
+		BE01D3971F70F16A00220BCA /* keyboard-click2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BE01D3951F70F16A00220BCA /* keyboard-click2.aiff */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BE01D3311F70F07D00220BCA /* LTSafeKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTSafeKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE01D3351F70F07D00220BCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE01D3371F70F07D00220BCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE01D3381F70F07D00220BCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE01D33A1F70F07D00220BCA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BE01D33B1F70F07D00220BCA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BE01D33E1F70F07D00220BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE01D3401F70F07D00220BCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE01D3431F70F07D00220BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE01D3451F70F07D00220BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE01D34C1F70F0BD00220BCA /* LTSafeKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSafeKeyboard.h; sourceTree = "<group>"; };
+		BE01D34D1F70F0BD00220BCA /* LTSafeKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSafeKeyboard.m; sourceTree = "<group>"; };
+		BE01D34E1F70F0BD00220BCA /* SafeKeyboardDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeKeyboardDefine.h; sourceTree = "<group>"; };
+		BE01D3501F70F0BD00220BCA /* NSArray+LTAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+LTAdd.h"; sourceTree = "<group>"; };
+		BE01D3511F70F0BD00220BCA /* NSArray+LTAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LTAdd.m"; sourceTree = "<group>"; };
+		BE01D3521F70F0BD00220BCA /* NSArray+Sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sudoku.h"; sourceTree = "<group>"; };
+		BE01D3531F70F0BD00220BCA /* NSArray+Sudoku.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sudoku.m"; sourceTree = "<group>"; };
+		BE01D3541F70F0BD00220BCA /* NSMutableArray+LTAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+LTAdd.h"; sourceTree = "<group>"; };
+		BE01D3551F70F0BD00220BCA /* NSMutableArray+LTAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+LTAdd.m"; sourceTree = "<group>"; };
+		BE01D3571F70F0BD00220BCA /* LTBaseKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTBaseKeyboard.h; sourceTree = "<group>"; };
+		BE01D3581F70F0BD00220BCA /* LTBaseKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTBaseKeyboard.m; sourceTree = "<group>"; };
+		BE01D3591F70F0BD00220BCA /* LTHintBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTHintBubble.h; sourceTree = "<group>"; };
+		BE01D35A1F70F0BD00220BCA /* LTHintBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTHintBubble.m; sourceTree = "<group>"; };
+		BE01D35B1F70F0BD00220BCA /* LTLetterKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLetterKeyboard.h; sourceTree = "<group>"; };
+		BE01D35C1F70F0BD00220BCA /* LTLetterKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTLetterKeyboard.m; sourceTree = "<group>"; };
+		BE01D35D1F70F0BD00220BCA /* LTNumberKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTNumberKeyboard.h; sourceTree = "<group>"; };
+		BE01D35E1F70F0BD00220BCA /* LTNumberKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTNumberKeyboard.m; sourceTree = "<group>"; };
+		BE01D35F1F70F0BD00220BCA /* LTPasswordKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTPasswordKeyboard.h; sourceTree = "<group>"; };
+		BE01D3601F70F0BD00220BCA /* LTPasswordKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTPasswordKeyboard.m; sourceTree = "<group>"; };
+		BE01D3611F70F0BD00220BCA /* LTSymbolKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSymbolKeyboard.h; sourceTree = "<group>"; };
+		BE01D3621F70F0BD00220BCA /* LTSymbolKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSymbolKeyboard.m; sourceTree = "<group>"; };
+		BE01D3651F70F0BD00220BCA /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		BE01D3661F70F0BD00220BCA /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		BE01D3671F70F0BD00220BCA /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		BE01D3681F70F0BD00220BCA /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		BE01D3691F70F0BD00220BCA /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		BE01D36A1F70F0BD00220BCA /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		BE01D36B1F70F0BD00220BCA /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		BE01D36C1F70F0BD00220BCA /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		BE01D36D1F70F0BD00220BCA /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		BE01D36E1F70F0BD00220BCA /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		BE01D36F1F70F0BD00220BCA /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		BE01D3701F70F0BD00220BCA /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		BE01D3711F70F0BD00220BCA /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		BE01D3721F70F0BD00220BCA /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		BE01D3731F70F0BD00220BCA /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		BE01D3741F70F0BD00220BCA /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		BE01D3751F70F0BD00220BCA /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		BE01D3761F70F0BD00220BCA /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		BE01D3771F70F0BD00220BCA /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		BE01D3781F70F0BD00220BCA /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		BE01D3791F70F0BD00220BCA /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		BE01D37A1F70F0BD00220BCA /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		BE01D37B1F70F0BD00220BCA /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		BE01D37C1F70F0BD00220BCA /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		BE01D37D1F70F0BD00220BCA /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		BE01D3921F70F15C00220BCA /* LTAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LTAssets.xcassets; sourceTree = "<group>"; };
+		BE01D3941F70F16A00220BCA /* keyboard-click.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "keyboard-click.aiff"; sourceTree = "<group>"; };
+		BE01D3951F70F16A00220BCA /* keyboard-click2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "keyboard-click2.aiff"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE01D32E1F70F07D00220BCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE01D3281F70F07D00220BCA = {
+			isa = PBXGroup;
+			children = (
+				BE01D3331F70F07D00220BCA /* LTSafeKeyboard */,
+				BE01D3321F70F07D00220BCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE01D3321F70F07D00220BCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE01D3311F70F07D00220BCA /* LTSafeKeyboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE01D3331F70F07D00220BCA /* LTSafeKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BE01D34B1F70F0BD00220BCA /* SafeKeyboard */,
+				BE01D3631F70F0BD00220BCA /* Vender */,
+				BE01D3371F70F07D00220BCA /* AppDelegate.h */,
+				BE01D3381F70F07D00220BCA /* AppDelegate.m */,
+				BE01D33A1F70F07D00220BCA /* ViewController.h */,
+				BE01D33B1F70F07D00220BCA /* ViewController.m */,
+				BE01D33D1F70F07D00220BCA /* Main.storyboard */,
+				BE01D3401F70F07D00220BCA /* Assets.xcassets */,
+				BE01D3921F70F15C00220BCA /* LTAssets.xcassets */,
+				BE01D3941F70F16A00220BCA /* keyboard-click.aiff */,
+				BE01D3951F70F16A00220BCA /* keyboard-click2.aiff */,
+				BE01D3421F70F07D00220BCA /* LaunchScreen.storyboard */,
+				BE01D3451F70F07D00220BCA /* Info.plist */,
+				BE01D3341F70F07D00220BCA /* Supporting Files */,
+			);
+			path = LTSafeKeyboard;
+			sourceTree = "<group>";
+		};
+		BE01D3341F70F07D00220BCA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE01D3351F70F07D00220BCA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE01D34B1F70F0BD00220BCA /* SafeKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BE01D34C1F70F0BD00220BCA /* LTSafeKeyboard.h */,
+				BE01D34D1F70F0BD00220BCA /* LTSafeKeyboard.m */,
+				BE01D34E1F70F0BD00220BCA /* SafeKeyboardDefine.h */,
+				BE01D34F1F70F0BD00220BCA /* Tool */,
+				BE01D3561F70F0BD00220BCA /* View */,
+			);
+			path = SafeKeyboard;
+			sourceTree = "<group>";
+		};
+		BE01D34F1F70F0BD00220BCA /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				BE01D3501F70F0BD00220BCA /* NSArray+LTAdd.h */,
+				BE01D3511F70F0BD00220BCA /* NSArray+LTAdd.m */,
+				BE01D3521F70F0BD00220BCA /* NSArray+Sudoku.h */,
+				BE01D3531F70F0BD00220BCA /* NSArray+Sudoku.m */,
+				BE01D3541F70F0BD00220BCA /* NSMutableArray+LTAdd.h */,
+				BE01D3551F70F0BD00220BCA /* NSMutableArray+LTAdd.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		BE01D3561F70F0BD00220BCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE01D3571F70F0BD00220BCA /* LTBaseKeyboard.h */,
+				BE01D3581F70F0BD00220BCA /* LTBaseKeyboard.m */,
+				BE01D3591F70F0BD00220BCA /* LTHintBubble.h */,
+				BE01D35A1F70F0BD00220BCA /* LTHintBubble.m */,
+				BE01D35B1F70F0BD00220BCA /* LTLetterKeyboard.h */,
+				BE01D35C1F70F0BD00220BCA /* LTLetterKeyboard.m */,
+				BE01D35D1F70F0BD00220BCA /* LTNumberKeyboard.h */,
+				BE01D35E1F70F0BD00220BCA /* LTNumberKeyboard.m */,
+				BE01D35F1F70F0BD00220BCA /* LTPasswordKeyboard.h */,
+				BE01D3601F70F0BD00220BCA /* LTPasswordKeyboard.m */,
+				BE01D3611F70F0BD00220BCA /* LTSymbolKeyboard.h */,
+				BE01D3621F70F0BD00220BCA /* LTSymbolKeyboard.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BE01D3631F70F0BD00220BCA /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				BE01D3641F70F0BD00220BCA /* Masonry */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		BE01D3641F70F0BD00220BCA /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				BE01D3651F70F0BD00220BCA /* MASCompositeConstraint.h */,
+				BE01D3661F70F0BD00220BCA /* MASCompositeConstraint.m */,
+				BE01D3671F70F0BD00220BCA /* MASConstraint+Private.h */,
+				BE01D3681F70F0BD00220BCA /* MASConstraint.h */,
+				BE01D3691F70F0BD00220BCA /* MASConstraint.m */,
+				BE01D36A1F70F0BD00220BCA /* MASConstraintMaker.h */,
+				BE01D36B1F70F0BD00220BCA /* MASConstraintMaker.m */,
+				BE01D36C1F70F0BD00220BCA /* MASLayoutConstraint.h */,
+				BE01D36D1F70F0BD00220BCA /* MASLayoutConstraint.m */,
+				BE01D36E1F70F0BD00220BCA /* Masonry.h */,
+				BE01D36F1F70F0BD00220BCA /* MASUtilities.h */,
+				BE01D3701F70F0BD00220BCA /* MASViewAttribute.h */,
+				BE01D3711F70F0BD00220BCA /* MASViewAttribute.m */,
+				BE01D3721F70F0BD00220BCA /* MASViewConstraint.h */,
+				BE01D3731F70F0BD00220BCA /* MASViewConstraint.m */,
+				BE01D3741F70F0BD00220BCA /* NSArray+MASAdditions.h */,
+				BE01D3751F70F0BD00220BCA /* NSArray+MASAdditions.m */,
+				BE01D3761F70F0BD00220BCA /* NSArray+MASShorthandAdditions.h */,
+				BE01D3771F70F0BD00220BCA /* NSLayoutConstraint+MASDebugAdditions.h */,
+				BE01D3781F70F0BD00220BCA /* NSLayoutConstraint+MASDebugAdditions.m */,
+				BE01D3791F70F0BD00220BCA /* View+MASAdditions.h */,
+				BE01D37A1F70F0BD00220BCA /* View+MASAdditions.m */,
+				BE01D37B1F70F0BD00220BCA /* View+MASShorthandAdditions.h */,
+				BE01D37C1F70F0BD00220BCA /* ViewController+MASAdditions.h */,
+				BE01D37D1F70F0BD00220BCA /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE01D3301F70F07D00220BCA /* LTSafeKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE01D3481F70F07D00220BCA /* Build configuration list for PBXNativeTarget "LTSafeKeyboard" */;
+			buildPhases = (
+				BE01D32D1F70F07D00220BCA /* Sources */,
+				BE01D32E1F70F07D00220BCA /* Frameworks */,
+				BE01D32F1F70F07D00220BCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LTSafeKeyboard;
+			productName = LTSafeKeyboard;
+			productReference = BE01D3311F70F07D00220BCA /* LTSafeKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE01D3291F70F07D00220BCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = lightank;
+				TargetAttributes = {
+					BE01D3301F70F07D00220BCA = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BE01D32C1F70F07D00220BCA /* Build configuration list for PBXProject "LTSafeKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE01D3281F70F07D00220BCA;
+			productRefGroup = BE01D3321F70F07D00220BCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE01D3301F70F07D00220BCA /* LTSafeKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE01D32F1F70F07D00220BCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE01D3931F70F15C00220BCA /* LTAssets.xcassets in Resources */,
+				BE01D3441F70F07D00220BCA /* LaunchScreen.storyboard in Resources */,
+				BE01D3411F70F07D00220BCA /* Assets.xcassets in Resources */,
+				BE01D3961F70F16A00220BCA /* keyboard-click.aiff in Resources */,
+				BE01D3971F70F16A00220BCA /* keyboard-click2.aiff in Resources */,
+				BE01D33F1F70F07D00220BCA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE01D32D1F70F07D00220BCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE01D33C1F70F07D00220BCA /* ViewController.m in Sources */,
+				BE01D3391F70F07D00220BCA /* AppDelegate.m in Sources */,
+				BE01D38F1F70F0BD00220BCA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				BE01D3811F70F0BD00220BCA /* NSMutableArray+LTAdd.m in Sources */,
+				BE01D38D1F70F0BD00220BCA /* MASViewConstraint.m in Sources */,
+				BE01D37F1F70F0BD00220BCA /* NSArray+LTAdd.m in Sources */,
+				BE01D3901F70F0BD00220BCA /* View+MASAdditions.m in Sources */,
+				BE01D3851F70F0BD00220BCA /* LTNumberKeyboard.m in Sources */,
+				BE01D38C1F70F0BD00220BCA /* MASViewAttribute.m in Sources */,
+				BE01D38A1F70F0BD00220BCA /* MASConstraintMaker.m in Sources */,
+				BE01D3361F70F07D00220BCA /* main.m in Sources */,
+				BE01D37E1F70F0BD00220BCA /* LTSafeKeyboard.m in Sources */,
+				BE01D3861F70F0BD00220BCA /* LTPasswordKeyboard.m in Sources */,
+				BE01D3911F70F0BD00220BCA /* ViewController+MASAdditions.m in Sources */,
+				BE01D3841F70F0BD00220BCA /* LTLetterKeyboard.m in Sources */,
+				BE01D38E1F70F0BD00220BCA /* NSArray+MASAdditions.m in Sources */,
+				BE01D3831F70F0BD00220BCA /* LTHintBubble.m in Sources */,
+				BE01D38B1F70F0BD00220BCA /* MASLayoutConstraint.m in Sources */,
+				BE01D3881F70F0BD00220BCA /* MASCompositeConstraint.m in Sources */,
+				BE01D3801F70F0BD00220BCA /* NSArray+Sudoku.m in Sources */,
+				BE01D3871F70F0BD00220BCA /* LTSymbolKeyboard.m in Sources */,
+				BE01D3821F70F0BD00220BCA /* LTBaseKeyboard.m in Sources */,
+				BE01D3891F70F0BD00220BCA /* MASConstraint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE01D33D1F70F07D00220BCA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE01D33E1F70F07D00220BCA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE01D3421F70F07D00220BCA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE01D3431F70F07D00220BCA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE01D3461F70F07D00220BCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE01D3471F70F07D00220BCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE01D3491F70F07D00220BCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LTSafeKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightank.LTSafeKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE01D34A1F70F07D00220BCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LTSafeKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightank.LTSafeKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE01D32C1F70F07D00220BCA /* Build configuration list for PBXProject "LTSafeKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE01D3461F70F07D00220BCA /* Debug */,
+				BE01D3471F70F07D00220BCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE01D3481F70F07D00220BCA /* Build configuration list for PBXNativeTarget "LTSafeKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE01D3491F70F07D00220BCA /* Debug */,
+				BE01D34A1F70F07D00220BCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE01D3291F70F07D00220BCA /* Project object */;
+}
