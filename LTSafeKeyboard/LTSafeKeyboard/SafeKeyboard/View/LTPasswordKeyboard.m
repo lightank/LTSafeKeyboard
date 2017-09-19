@@ -94,10 +94,12 @@
                 button.titleLabel.font = [UIFont systemFontOfSize:17.f];
             }
                 break;
-            case 11:
+            case 11:    //删除键
             {
                 [button setTitle:@"" forState:UIControlStateNormal];
                 [button setBackgroundImage:[[UIImage imageNamed:@"dasahnchu"] stretchableImageWithLeftCapWidth:10 topCapHeight:10] forState:UIControlStateNormal];
+                
+                self.deleteKey = button;
             }
                 break;
             default:

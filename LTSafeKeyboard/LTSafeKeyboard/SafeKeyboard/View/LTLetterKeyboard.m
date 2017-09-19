@@ -106,6 +106,8 @@
                 [button setBackgroundImage:[[UIImage imageNamed:kDeleteKeyImageName] stretchableImageWithLeftCapWidth:10 topCapHeight:10] forState:UIControlStateNormal];
                 [button addTarget:self action:@selector(buttonTap:) forControlEvents:UIControlEventTouchUpInside];
                 button.enabled = YES;
+                
+                self.deleteKey = button;
             }
                 break;
             case 30:    //大小写切换

@@ -148,11 +148,7 @@
             break;
         case LTKeyTypeDelete:
         {
-            //删除按钮动作
-            if (self.textView) [self.textView deleteBackward];
-            if (self.textFiled) [self.textFiled deleteBackward];
-            
-            if (self.clickSoundEnable) AudioServicesPlaySystemSound(self.soundID2);
+            [self deleteKeyAction];
         }
             break;
         case LTKeyTypeDone:
@@ -170,6 +166,20 @@
         }
             break;
     }
+}
+
+- (void)deleteKeyPressGestureAction:(UILongPressGestureRecognizer *)gesture
+{
+    [self deleteKeyAction];
+}
+
+- (void)deleteKeyAction
+{
+    //删除按钮动作
+    if (self.textView) [self.textView deleteBackward];
+    if (self.textFiled) [self.textFiled deleteBackward];
+    
+    if (self.clickSoundEnable) AudioServicesPlaySystemSound(self.soundID2);
 }
 
 #pragma mark - 事件处理

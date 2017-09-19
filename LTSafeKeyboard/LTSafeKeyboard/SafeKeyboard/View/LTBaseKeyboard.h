@@ -50,6 +50,8 @@ typedef NS_ENUM(NSInteger, LTKeyType) {
 - (void)pressKey:(NSString *)key keyType:(LTKeyType)keyType keyboardType:(LTKeyboardType)keyboardType;
 
 @optional
+/**  删除按钮长按动作  */
+- (void)deleteKeyPressGestureAction:(UILongPressGestureRecognizer *)gesture;
 
 @end
 
@@ -68,11 +70,15 @@ typedef NS_ENUM(NSInteger, LTKeyType) {
 @property (nonatomic, strong) LTHintBubble *bubble;
 /**  是否显示提示气泡  */
 @property (nonatomic, assign, getter=isShowHintBubble) BOOL showHintBubble;
+/** 删除按钮 **/
+@property (nonatomic, weak) UIView *deleteKey;
 
 /**  当前键盘类型  */
 - (LTKeyboardType)keyboardType;
 /**  乱序键盘  */
 - (void)randomKeyBoard;
+/**  在删除按钮上添加长按手势  */
+- (void)addPressGestureToDeleteKey:(UIView *)key;
 
 /**
  快速创建键盘

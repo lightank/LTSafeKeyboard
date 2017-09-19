@@ -94,6 +94,11 @@
     [self.delegate pressKey:@"完成" keyType:LTKeyTypeDone keyboardType:LTKeyboardTypeCommon];
 }
 
+- (void)layoutSubviews
+{
+    [self addPressGestureToDeleteKey:self.deleteKey];
+}
+
 - (void)willMoveToWindow:(UIWindow *)newWindow
 {
     [self randomKeyBoard];
@@ -103,6 +108,33 @@
 - (void)randomKeyBoard
 {
     if (!self.isRandom) return;
+}
+
+/**  在删除按钮上添加长按手势  */
+- (void)addPressGestureToDeleteKey:(UIView *)key
+{
+    if (![self.delegate respondsToSelector:@selector(deleteKeyPressGestureAction:)])
+    {
+        return;
+    }
+    else
+    {
+        
+    }
+    
+    __block BOOL isAdd = NO;
+    [key.gestureRecognizers enumerateObjectsUsingBlock:^(__kindof UIGestureRecognizer * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+       if ([obj isKindOfClass:[UILongPressGestureRecognizer class]])
+       {
+           isAdd = YES;
+           *stop = YES;
+       }
+    }];
+    if (isAdd) return;
+    
+    UILongPressGestureRecognizer *longPressGr = [[UILongPressGestureRecognizer alloc] initWithTarget:self.delegate action:@selector(deleteKeyPressGestureAction:)];
+    longPressGr.minimumPressDuration = 1.f;
+    [key addGestureRecognizer:longPressGr];
 }
 
 #pragma mark - setter and getter

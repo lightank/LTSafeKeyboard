@@ -100,6 +100,8 @@
             {
                 [button setTitle:@"" forState:UIControlStateNormal];
                 [button setBackgroundImage:[[UIImage imageNamed:kDeleteKeyImageName] stretchableImageWithLeftCapWidth:10 topCapHeight:10] forState:UIControlStateNormal];
+                
+                self.deleteKey = button;
             }
                 break;
             case 30:    //切换数字键盘

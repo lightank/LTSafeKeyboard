@@ -89,6 +89,8 @@
                 {
                     [button setTitle:@"" forState:UIControlStateNormal];
                     [button setBackgroundImage:[[UIImage imageNamed:@"dasahnchu"] stretchableImageWithLeftCapWidth:10 topCapHeight:10] forState:UIControlStateNormal];
+                    
+                    self.deleteKey = button;
                 }
                     break;
                 default:
