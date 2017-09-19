@@ -33,9 +33,9 @@
 		BE01D38F1F70F0BD00220BCA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D3781F70F0BD00220BCA /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		BE01D3901F70F0BD00220BCA /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D37A1F70F0BD00220BCA /* View+MASAdditions.m */; };
 		BE01D3911F70F0BD00220BCA /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01D37D1F70F0BD00220BCA /* ViewController+MASAdditions.m */; };
-		BE01D3931F70F15C00220BCA /* LTAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE01D3921F70F15C00220BCA /* LTAssets.xcassets */; };
-		BE01D3961F70F16A00220BCA /* keyboard-click.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BE01D3941F70F16A00220BCA /* keyboard-click.aiff */; };
-		BE01D3971F70F16A00220BCA /* keyboard-click2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BE01D3951F70F16A00220BCA /* keyboard-click2.aiff */; };
+		BE01D39D1F70F74100220BCA /* keyboard-click.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BE01D39A1F70F74100220BCA /* keyboard-click.aiff */; };
+		BE01D39E1F70F74100220BCA /* keyboard-click2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BE01D39B1F70F74100220BCA /* keyboard-click2.aiff */; };
+		BE01D39F1F70F74100220BCA /* LTAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE01D39C1F70F74100220BCA /* LTAssets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,9 +95,9 @@
 		BE01D37B1F70F0BD00220BCA /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		BE01D37C1F70F0BD00220BCA /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		BE01D37D1F70F0BD00220BCA /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		BE01D3921F70F15C00220BCA /* LTAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LTAssets.xcassets; sourceTree = "<group>"; };
-		BE01D3941F70F16A00220BCA /* keyboard-click.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "keyboard-click.aiff"; sourceTree = "<group>"; };
-		BE01D3951F70F16A00220BCA /* keyboard-click2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "keyboard-click2.aiff"; sourceTree = "<group>"; };
+		BE01D39A1F70F74100220BCA /* keyboard-click.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "keyboard-click.aiff"; sourceTree = "<group>"; };
+		BE01D39B1F70F74100220BCA /* keyboard-click2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "keyboard-click2.aiff"; sourceTree = "<group>"; };
+		BE01D39C1F70F74100220BCA /* LTAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LTAssets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +138,6 @@
 				BE01D33B1F70F07D00220BCA /* ViewController.m */,
 				BE01D33D1F70F07D00220BCA /* Main.storyboard */,
 				BE01D3401F70F07D00220BCA /* Assets.xcassets */,
-				BE01D3921F70F15C00220BCA /* LTAssets.xcassets */,
-				BE01D3941F70F16A00220BCA /* keyboard-click.aiff */,
-				BE01D3951F70F16A00220BCA /* keyboard-click2.aiff */,
 				BE01D3421F70F07D00220BCA /* LaunchScreen.storyboard */,
 				BE01D3451F70F07D00220BCA /* Info.plist */,
 				BE01D3341F70F07D00220BCA /* Supporting Files */,
@@ -164,6 +161,7 @@
 				BE01D34E1F70F0BD00220BCA /* SafeKeyboardDefine.h */,
 				BE01D34F1F70F0BD00220BCA /* Tool */,
 				BE01D3561F70F0BD00220BCA /* View */,
+				BE01D3991F70F74100220BCA /* Supporting Files */,
 			);
 			path = SafeKeyboard;
 			sourceTree = "<group>";
@@ -240,6 +238,16 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		BE01D3991F70F74100220BCA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE01D39A1F70F74100220BCA /* keyboard-click.aiff */,
+				BE01D39B1F70F74100220BCA /* keyboard-click2.aiff */,
+				BE01D39C1F70F74100220BCA /* LTAssets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -298,12 +306,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE01D3931F70F15C00220BCA /* LTAssets.xcassets in Resources */,
 				BE01D3441F70F07D00220BCA /* LaunchScreen.storyboard in Resources */,
 				BE01D3411F70F07D00220BCA /* Assets.xcassets in Resources */,
-				BE01D3961F70F16A00220BCA /* keyboard-click.aiff in Resources */,
-				BE01D3971F70F16A00220BCA /* keyboard-click2.aiff in Resources */,
+				BE01D39D1F70F74100220BCA /* keyboard-click.aiff in Resources */,
+				BE01D39E1F70F74100220BCA /* keyboard-click2.aiff in Resources */,
 				BE01D33F1F70F07D00220BCA /* Main.storyboard in Resources */,
+				BE01D39F1F70F74100220BCA /* LTAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
